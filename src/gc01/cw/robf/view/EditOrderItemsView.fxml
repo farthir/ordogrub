@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gc01.cw.robf.controller.EditOrderItemsViewController">
+   <children>
+       <Button fx:id="cancelButton" layoutX="800.0" layoutY="434.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="720.0" layoutY="434.0" mnemonicParsing="false" onAction="#save" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TilePane fx:id="menuTilePane" layoutX="386.0" layoutY="62.0" prefHeight="358.0" prefWidth="491.0" />
+      <Button fx:id="deleteButton" layoutX="25.0" layoutY="429.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Pane fx:id="tablePane" layoutX="25.0" layoutY="49.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="342.0" />
+      <Button fx:id="starterButton" layoutX="386.0" layoutY="12.0" mnemonicParsing="false" onAction="#selectStarter" prefHeight="0.0" prefWidth="90.0" text="Starter">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainButton" layoutX="487.0" layoutY="12.0" mnemonicParsing="false" onAction="#selectMain" prefHeight="0.0" prefWidth="90.0" text="Main">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="dessertButton" layoutX="588.0" layoutY="12.0" mnemonicParsing="false" onAction="#selectDessert" prefHeight="0.0" prefWidth="90.0" text="Dessert">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="drinkButton" layoutX="789.0" layoutY="12.0" mnemonicParsing="false" onAction="#selectDrink" prefHeight="0.0" prefWidth="90.0" text="Drink">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="sideButton" layoutX="689.0" layoutY="12.0" mnemonicParsing="false" onAction="#selectSide" prefHeight="0.0" prefWidth="90.0" text="Side">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="statusLabel" layoutX="25.0" layoutY="466.0" prefHeight="18.0" prefWidth="680.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

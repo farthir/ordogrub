@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gc01.cw.robf.controller.ManageOrdersViewController">
+   <children>
+      <Pane fx:id="tablePane" layoutX="25.0" layoutY="52.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="274.0" prefWidth="850.0" />
+      <Button fx:id="cancelButton" layoutX="800.0" layoutY="434.0" mnemonicParsing="false" onAction="#cancel" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="720.0" layoutY="434.0" mnemonicParsing="false" onAction="#save" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="25.0" layoutY="385.0" text="Delete an order:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteButton" disable="true" layoutX="225.0" layoutY="383.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Label fx:id="statusLabel" layoutX="25.0" layoutY="445.0" prefHeight="17.0" prefWidth="554.0" textFill="RED" />
+      <TextField fx:id="filterTextField" layoutX="25.0" layoutY="20.0" promptText="Filter Orders" />
+      <Label layoutX="25.0" layoutY="342.0" text="Import/export orders:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="exportButton" disable="true" layoutX="302.0" layoutY="340.0" mnemonicParsing="false" onAction="#exportOrders" text="Export" />
+      <Button fx:id="importButton" disable="true" layoutX="225.0" layoutY="340.0" mnemonicParsing="false" onAction="#importOrders" text="Import" />
+   </children>
+</AnchorPane>

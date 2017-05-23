@@ -1,0 +1,9 @@
+# Mac Specific
+.DS_Store
+
+# Eclipse recommended
+bin/
+
+# Custom Eclipse
+.metadata
+.recommenders
